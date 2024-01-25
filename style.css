@@ -346,7 +346,7 @@
     text-align: center;
     justify-content: center;
     width: 1100px;
-    height: 500px;
+    height: 400px;
     background-color: #555758;   
     margin: auto;
     margin-top: 80px;  
@@ -354,7 +354,7 @@
 }
 
 .project-header h1 {
-    top: 5px;
+    top: -5px !important;
     font-size: 25px;
 }
 
@@ -364,7 +364,7 @@
     align-items: center;
     justify-content: center;
     width: 1060px;
-    height: 400px;
+    height: 300px;
     background-color: grey;
     border-radius: 10px;
     position: relative;
@@ -374,24 +374,77 @@
 .bond-image {
     position: relative;
     display: flex;
-    top: -85px;
-    width: 200px;
-    height: 200px;
+    top: 0px;
+    width: 250px;
+    height: 270px;
 }
 
 .options-image {
     position: relative;
     display: flex;
-    top: -85px;
-    width: 300px;
-    height: 200px;
+    top: 0px;
+    width: 250px;
+    height: 270px;
 }
 
 .market-dashboard-image {
     position: relative;
     display: flex;
-    top: -85px;
-    width: 300px;
-    height: 200px;
-
+    top: 0px;
+    width: 250px;
+    height: 270px;
 }
+
+.trading-image {
+    position: relative;
+    display: flex;
+    top: 0px;
+    width: 250px;
+    height: 270px;
+}
+
+.bond-image:hover,
+.options-image:hover,
+.market-dashboard-image:hover,
+.trading-image:hover {
+    opacity: .1;
+    background-color: rgba(255, 255, 255, 0.7); 
+}
+
+.image1 {
+    display: flex;
+}
+
+.hidden-text1, 
+.hidden-text2,
+.hidden-text3, 
+.hidden-text4 {
+    display: none;
+}
+
+
+.bond-image:hover + .hidden-text1 {
+    display: flex;
+    position: absolute;
+}
+
+.options-image:hover + .hidden-text2 {
+    display: flex;
+    position: absolute;
+    left: 350px;
+}
+
+.market-dashboard-image:hover + .hidden-text3 {
+    display: flex;
+    position: absolute;
+    left: 550px;
+}
+
+.trading-image:hover + .hidden-text4 {
+    display: flex;
+    position: absolute;
+    left: 850px;
+}
+
+
+
