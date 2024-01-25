@@ -1,0 +1,397 @@
+.body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(231, 224, 224);   
+ 
+}
+
+.top-header {
+    position: relative;
+    display: flex;
+    text-wrap: nowrap;
+    justify-content: center;
+    height: 60px;
+    top: -10px;
+    background-color: black;
+    align-items: center;
+    margin: auto;
+    width: 101%;
+    margin-left: -8px;
+
+}
+
+.top-header h1 {
+    color: white;
+    margin: auto; 
+    display: flex;
+    position: relative;
+    font-size: 20px;
+}
+
+.header-name {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 120px;
+    font-size: 22px;
+}
+
+.interest-header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 120px;
+    font-size: 15px;
+}
+
+.about-me-header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-header p {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 120px;
+    font-size: 17px;
+    color: black;
+}
+
+.link-header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 120px;
+    margin: auto;
+    gap: 5px;
+}
+
+.resume-button {
+    width: 70px;
+    height: 45px;
+    background-color: black;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+.link-header h1 {
+    font-size: 18px;
+    justify-self: center;
+    display: flex;
+    margin-left: 5px;
+    color: white;
+}
+
+.github-link {
+    width: 30px;
+    height: 30px;
+}
+
+.linkedin-link {
+    width: 30px;
+    height: 30px;
+}
+
+/* Style for Education*/
+.education-header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 220px;
+    width: 1100px;
+    height: 200px;
+    background-color: #555758;   
+    border-radius: 10px;
+}
+
+.education-header p {
+    margin-bottom: 10px; 
+}
+
+.education-header h1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    top: -70px;
+}
+
+.education-name {
+    display: flex !important;
+    position: absolute !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: auto !important;
+    top: 130px !important;  
+    font-size: 10px;
+}
+
+.education-name p {
+    display: flex !important;
+    position: absolute !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: auto !important;
+    top: -30px !important;  
+    font-size: 14px !important;
+    text-wrap: nowrap;
+    color: white;
+}
+
+.club-header {
+    display: flex !important;
+    position: absolute !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: auto !important;
+    top: 120px !important;  
+    font-size: 14px !important;
+    text-wrap: nowrap;
+    color: white;
+}
+
+
+
+/* Style for Work Experience*/
+.work-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 1100px;
+    height: 1000px;
+    background-color: #555758;   
+    margin: auto;
+    margin-top: 80px;  
+    border-radius: 15px;  
+}
+
+.work-header h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0; 
+    top: -20px;
+    display: flex;
+    position: relative;
+    
+}
+
+
+.inner-box {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 1060px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 10px;
+    position: relative;
+    text-wrap: nowrap;
+}
+
+.inner-box h1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px; 
+    top: -70px; 
+    left: 530px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    align-self: center;
+}
+
+.inner-box p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    left: -320px;
+    margin-top: 20px;
+    text-align: left;
+    position: relative; 
+}
+
+
+
+.inner-box1 {
+    position: absolute;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 1060px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 10px;
+    position: relative;
+    text-wrap: nowrap;
+}
+
+.company-header {
+
+}
+
+.inner-box1 h1 {
+    top: 5px;
+    font-size: 25px;
+}
+
+.inner-box1 p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    left: 10px;
+    margin-top: 20px;
+    text-align: left;
+    position: relative; 
+}
+
+
+
+.inner-box2 {
+    position: absolute;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 1060px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 10px;
+    position: relative;
+    text-wrap: nowrap;
+}
+
+.company-header {
+
+}
+
+.inner-box2 h1 {
+    top: 5px;
+    font-size: 25px;
+}
+
+.inner-box2 p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    left: 10px;
+    margin-top: 20px;
+    text-align: left;
+    position: relative; 
+}
+
+
+
+.inner-box3 {
+    position: absolute;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 1060px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 10px;
+    position: relative;
+    text-wrap: nowrap;
+}
+
+.company-header {
+
+}
+
+.inner-box3 h1 {
+    top: 5px;
+    font-size: 25px;
+}
+
+.inner-box3 p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    left: 10px;
+    margin-top: 20px;
+    text-align: left;
+    position: relative; 
+}
+
+
+
+
+
+.project-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 1100px;
+    height: 500px;
+    background-color: #555758;   
+    margin: auto;
+    margin-top: 80px;  
+    border-radius: 15px;  
+}
+
+.project-header h1 {
+    top: 5px;
+    font-size: 25px;
+}
+
+.inner-box4  {
+    display: flex;
+    margin-top: -5px;
+    align-items: center;
+    justify-content: center;
+    width: 1060px;
+    height: 400px;
+    background-color: grey;
+    border-radius: 10px;
+    position: relative;
+    text-wrap: nowrap;
+}
+
+.bond-image {
+    position: relative;
+    display: flex;
+    top: -85px;
+    width: 200px;
+    height: 200px;
+}
+
+.options-image {
+    position: relative;
+    display: flex;
+    top: -85px;
+    width: 300px;
+    height: 200px;
+}
+
+.market-dashboard-image {
+    position: relative;
+    display: flex;
+    top: -85px;
+    width: 300px;
+    height: 200px;
+
+}
