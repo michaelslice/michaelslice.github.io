@@ -596,3 +596,39 @@
     color: white;
 }
 
+
+/********SKILLS SECTION**************************************************************************/
+
+
+.skills-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 1100px;
+    height: 400px;
+    background-color: #555758;   
+    margin: auto;
+    margin-top: 580px;  
+    border-radius: 15px;  
+}
+
+.skills-header h1 {
+    top: -5px !important;
+    font-size: 25px;
+}
+
+.inner-box5  {
+    top: 500px;
+    display: flex;
+    margin-top: -5px;
+    align-items: center;
+    justify-content: center;
+    width: 1060px;
+    height: 300px;
+    background-color: grey;
+    border-radius: 10px;
+    position: relative;
+    text-wrap: nowrap;
+}
