@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     background-color: rgb(231, 224, 224);   
-    overflow-x: hidden;
 }
 
 .top-header {
@@ -17,8 +16,6 @@
     margin: auto;
     width: 101%;
     margin-left: -8px;
-    overflow-x: hidden;
-
 }
 
 .top-header h1 {
@@ -100,7 +97,10 @@
     height: 30px;
 }
 
-/* Style for Education*/
+
+/********EDUCATION SECTION**************************************************************************/
+
+
 .education-header {
     display: flex;
     position: relative;
@@ -163,8 +163,9 @@
 }
 
 
+/********WORK EXPERIENCE SECTION**************************************************************************/
 
-/* Style for Work Experience*/
+
 .work-header {
     display: flex;
     flex-direction: column;
@@ -246,10 +247,6 @@
     text-wrap: nowrap;
 }
 
-.company-header {
-
-}
-
 .inner-box1 h1 {
     top: 5px;
     font-size: 25px;
@@ -281,10 +278,6 @@
     text-wrap: nowrap;
 }
 
-.company-header {
-
-}
-
 .inner-box2 h1 {
     top: 5px;
     font-size: 25px;
@@ -301,8 +294,6 @@
     position: relative; 
 }
 
-
-
 .inner-box3 {
     position: absolute;
     margin-top: 20px;
@@ -315,8 +306,6 @@
     position: relative;
     text-wrap: nowrap;
 }
-
-
 
 .inner-box3 h1 {
     top: 5px;
@@ -335,7 +324,7 @@
 }
 
 
-
+/********PROJECT SECTION**************************************************************************/
 
 
 .project-header {
@@ -370,7 +359,6 @@
     text-wrap: nowrap;
 }
 
-
 .image1 {
     display: flex;
     left: 30px;
@@ -384,7 +372,6 @@
     top: 0px;
     width: 250px;
     height: 270px;
-    
 }
 
 .options-image {
@@ -413,7 +400,7 @@
     top: 0px;
     width: 250px;
     height: 270px;
-    left: -400px;
+    left: -600px;
     position: relative;
 }
 
@@ -425,13 +412,15 @@
     background-color: rgba(255, 255, 255, 0.7); 
 }
 
-
 .hidden-text1, 
 .hidden-text2,
 .hidden-text3, 
 .hidden-text4 {
     display: none;
 }
+
+
+/********PROJECT 1 CORPORATE BOND PRICER**************************************************************************/
 
 
 .bond-image:hover + .hidden-text1 {
@@ -475,10 +464,13 @@
 }
 
 
+/********PROJECT 2 OPTIONS SCREENER**************************************************************************/
+
+
 .options-image:hover + .hidden-text2 {
     display: flex;
     position: absolute;
-    left: 355px;
+    left: 310px;
     top: 20px;
     font-size: 20px;
 }
@@ -516,24 +508,91 @@
 }
 
 
+/********PROJECT 3 STOCK MARKET DASHBOARD**************************************************************************/
 
 
 .market-dashboard-image:hover + .hidden-text3 {
     display: flex;
     position: absolute;
-    left: 555px;
+    left: 530px;
     top: 20px;
     font-size: 20px;
 
 }
+
+.image1:hover .project3-tech-stack {
+    opacity: 1;
+}
+
+.project3-tech-stack {
+    display: flex;
+    position: relative;
+    margin: auto;
+    font-size: 16px;
+    height: 20px;
+    width: 200px;
+    opacity: 0;
+    transition: opacity 0.3s ease;  
+    border-radius: 5px;
+    max-width: 200px;
+    max-height: 200px;
+    height: 200px;
+    white-space: wrap;
+    
+}
+
+.project3-description {
+    left: -630px;
+    top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: baseline;  
+    width: 200px;
+    max-width: 200px;
+    color: white;
+}
+
+
+/********PROJECT 4 STOCK TRADING SIMULATOR**************************************************************************/
+
 
 .trading-image:hover + .hidden-text4 {
     display: flex;
     position: absolute;
     top: 20px;
-    left: 820px;
+    left: 790px;
     font-size: 20px;
 }
 
+.image1:hover .project4-tech-stack {
+    opacity: 1;
+}
 
+.project4-tech-stack {
+    display: flex;
+    position: relative;
+    margin: auto;
+    font-size: 16px;
+    height: 20px;
+    width: 200px;
+    opacity: 0;
+    transition: opacity 0.3s ease;  
+    border-radius: 5px;
+    max-width: 200px;
+    max-height: 200px;
+    height: 200px;
+    white-space: wrap;
+    
+}
+
+.project4-description {
+    left: -810px;
+    top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: baseline;  
+    width: 200px;
+    max-width: 200px;
+    color: white;
+}
 
