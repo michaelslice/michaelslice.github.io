@@ -426,24 +426,65 @@
 .bond-image:hover + .hidden-text1 {
     display: flex;
     position: absolute;
+    left: 60px;
+    top: 20px;
+    font-size: 20px;
 }
+
+.options-image:hover + .project1-tech-stack {
+    display: flex;
+    left: -550px;
+    top: -50px;
+}
+
+
+.project1-description p{
+    font-size: 15px;
+    display: flex;
+    position: relative;
+    left: -1550px;
+    justify-self: left;
+}
+
+
+.project1-tech-stack {
+    display: flex;
+    position: relative;
+    margin: auto;
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+    background-color: purple;
+    border-radius: 5px;
+}
+
+
+
 
 .options-image:hover + .hidden-text2 {
     display: flex;
     position: absolute;
-    left: 350px;
+    left: 335px;
+    top: 20px;
+    font-size: 20px;
+
 }
 
 .market-dashboard-image:hover + .hidden-text3 {
     display: flex;
     position: absolute;
-    left: 550px;
+    left: 555px;
+    top: 20px;
+    font-size: 20px;
+
 }
 
 .trading-image:hover + .hidden-text4 {
     display: flex;
     position: absolute;
-    left: 850px;
+    top: 20px;
+    left: 820px;
+    font-size: 20px;
 }
 
 
