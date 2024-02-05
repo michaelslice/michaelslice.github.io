@@ -338,7 +338,7 @@
     text-align: center;
     justify-content: center;
     width: 1100px;
-    height: 400px;
+    height: 520px;
     background-color: #555758;   
     margin: auto;
     margin-top: 80px;  
@@ -346,17 +346,21 @@
 }
 
 .project-header h1 {
-    top: -5px !important;
+    justify-content: center;
+    justify-self: first baseline;
     font-size: 25px;
+    top: -30px;
+    display: flex;
+    position: relative;
 }
 
 .inner-box4  {
     display: flex;
-    margin-top: -5px;
+    margin-top: -40px;
     align-items: center;
     justify-content: center;
     width: 1060px;
-    height: 300px;
+    height: 450px;
     background-color: grey;
     border-radius: 10px;
     position: relative;
@@ -427,17 +431,14 @@
 /********PROJECT 1 CORPORATE BOND PRICER**************************************************************************/
 
 
-.bond-image:hover + .hidden-text1 {
+.bond-image + .hidden-text1 {
     display: flex;
     position: absolute;
     left: 30px;
-    top: 20px;
+    top: -220px;
     font-size: 20px;
 }   
 
-.image1:hover .project1-tech-stack {
-    opacity: 1;
-}
 
 .project1-tech-stack {
     display: flex;
@@ -445,7 +446,7 @@
     margin: auto;
     font-size: 16px;
     height: 20px;
-    width: 200px;
+    width: 200px;   
     opacity: 0;
     transition: opacity 0.3s ease;  
     border-radius: 5px;
@@ -457,16 +458,11 @@
     
 }
 
-
-.project1-description:hover + .bond-image +.image1 .project1-tech-stack {
-    opacity: 1;
-}
-
 .project1-tech-stack {
     /* ... your existing styles ... */
     opacity: 0;
+    flex-direction: column;
 }
-
 
 .project1-description {
     left: -230px;
@@ -474,10 +470,20 @@
     position: relative;
     display: flex;
     justify-content: baseline;  
-    width: 200px;
+    width: 400px;
     max-width: 200px;
     color: white;
 }
+
+.project1-github {
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-wrap: nowrap;
+    
+    left: -230px;
+}
+
 
 
 /********PROJECT 2 OPTIONS SCREENER**************************************************************************/
