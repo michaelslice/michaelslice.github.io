@@ -338,7 +338,7 @@
     text-align: center;
     justify-content: center;
     width: 1100px;
-    height: 520px;
+    height: 620px;
     background-color: #555758;   
     margin: auto;
     margin-top: 80px;  
@@ -347,7 +347,7 @@
 
 .project-header h1 {
     justify-content: center;
-    justify-self: first baseline;
+    
     font-size: 25px;
     top: -30px;
     display: flex;
@@ -357,87 +357,62 @@
 .inner-box4  {
     display: flex;
     margin-top: -40px;
-    align-items: center;
-    justify-content: center;
     width: 1060px;
-    height: 450px;
+    height: 550px;
     background-color: grey;
     border-radius: 10px;
-    position: relative;
-    text-wrap: nowrap;
+    flex-direction: column;
 }
 
 .image1 {
     display: flex;
-    left: 30px;
+    margin: auto;
+    justify-self: center;
+    align-items: center;
     position: relative;
-    overflow-x: hidden;
+    top: 20px;
 }
 
-.bond-image {
-    position: relative;
-    display: flex;
-    top: 0px;
-    width: 250px;
-    height: 270px;
-}
-
-.options-image {
-    position: relative;
-    display: flex;
-    top: 0px;
-    width: 250px;
-    height: 270px;
-    left: -200px;
-    position: relative;
-}
-
-.market-dashboard-image {
-    position: relative;
-    display: flex;
-    top: 0px;
-    width: 250px;
-    height: 270px;
-    left: -400px;
-    position: relative;
-}
-
+.bond-image,
+.options-image,
+.market-dashboard-image,
 .trading-image {
     position: relative;
     display: flex;
     top: 0px;
     width: 250px;
     height: 270px;
-    left: -600px;
+}
+
+.projects {
+    background-color: purple;
+    width: 1000px;
+    height: 250px;
+    display: flex;
+    flex-direction: column; 
+    left: 10px;
     position: relative;
+    margin: 20px;
 }
 
-.bond-image:hover,
-.options-image:hover,
-.market-dashboard-image:hover,
-.trading-image:hover {
-    opacity: .1;
-    background-color: rgba(255, 255, 255, 0.7); 
-}
 
-.hidden-text1, 
-.hidden-text2,
-.hidden-text3, 
-.hidden-text4 {
-    display: none;
-}
 
 
 /********PROJECT 1 CORPORATE BOND PRICER**************************************************************************/
 
+.project1 {
+    max-width: 270px;
+    max-height: 250px;
+}
 
-.bond-image + .hidden-text1 {
+
+.hidden-text1 {
     display: flex;
-    position: absolute;
-    left: 30px;
-    top: -220px;
+    position: relative;
+    top: 0px;
+    flex-direction: column;
     font-size: 20px;
-}   
+}
 
 
 .project1-tech-stack {
@@ -445,33 +420,22 @@
     position: relative;
     margin: auto;
     font-size: 16px;
-    height: 20px;
-    width: 200px;   
-    opacity: 0;
-    transition: opacity 0.3s ease;  
     border-radius: 5px;
-    max-width: 200px;
-    max-height: 200px;
+    left: 20px;
     height: 200px;
     white-space: wrap;
-    opacity: 1; 
+
+
     
 }
 
-.project1-tech-stack {
-    /* ... your existing styles ... */
-    opacity: 0;
-    flex-direction: column;
-}
-
 .project1-description {
-    left: -230px;
-    top: 20px;
+
+
     position: relative;
     display: flex;
-    justify-content: baseline;  
+
     width: 400px;
-    max-width: 200px;
     color: white;
 }
 
@@ -480,8 +444,8 @@
     position: relative;
     align-items: center;
     text-wrap: nowrap;
-    
-    left: -230px;
+    left: -120px;
+    top: 100px
 }
 
 
@@ -489,17 +453,7 @@
 /********PROJECT 2 OPTIONS SCREENER**************************************************************************/
 
 
-.options-image:hover + .hidden-text2 {
-    display: flex;
-    position: absolute;
-    left: 310px;
-    top: 20px;
-    font-size: 20px;
-}
 
-.image1:hover .project2-tech-stack {
-    opacity: 1;
-}
 
 .project2-tech-stack {
     display: flex;
@@ -511,8 +465,7 @@
     opacity: 0;
     transition: opacity 0.3s ease;  
     border-radius: 5px;
-    max-width: 200px;
-    max-height: 200px;
+    
     height: 200px;
     white-space: wrap;
     
@@ -533,18 +486,7 @@
 /********PROJECT 3 STOCK MARKET DASHBOARD**************************************************************************/
 
 
-.market-dashboard-image:hover + .hidden-text3 {
-    display: flex;
-    position: absolute;
-    left: 530px;
-    top: 20px;
-    font-size: 20px;
 
-}
-
-.image1:hover .project3-tech-stack {
-    opacity: 1;
-}
 
 .project3-tech-stack {
     display: flex;
@@ -553,18 +495,14 @@
     font-size: 16px;
     height: 20px;
     width: 200px;
-    opacity: 0;
-    transition: opacity 0.3s ease;  
     border-radius: 5px;
-    max-width: 200px;
-    max-height: 200px;
+
     height: 200px;
     white-space: wrap;
     
 }
 
 .project3-description {
-    left: -630px;
     top: 20px;
     position: relative;
     display: flex;
@@ -578,17 +516,7 @@
 /********PROJECT 4 STOCK TRADING SIMULATOR**************************************************************************/
 
 
-.trading-image:hover + .hidden-text4 {
-    display: flex;
-    position: absolute;
-    top: 20px;
-    left: 790px;
-    font-size: 20px;
-}
 
-.image1:hover .project4-tech-stack {
-    opacity: 1;
-}
 
 .project4-tech-stack {
     display: flex;
@@ -597,11 +525,8 @@
     font-size: 16px;
     height: 20px;
     width: 200px;
-    opacity: 0;
-    transition: opacity 0.3s ease;  
     border-radius: 5px;
-    max-width: 200px;
-    max-height: 200px;
+
     height: 200px;
     white-space: wrap;
     
