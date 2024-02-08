@@ -403,20 +403,12 @@
 
 .project1 {
     max-width: 270px;
-    max-height: 250px;
-}
-
-
-.hidden-text1 {
+    max-height: 250px;  
     display: flex;
     position: relative;
-    top: 0px;
-    flex-direction: column;
-    font-size: 20px;
-    text-wrap: nowrap;
-    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
 }
-
 
 .project1-explain {
     width: 250px;
@@ -426,40 +418,42 @@
     flex-direction: row;
     display: flex;
     position: relative;
-    
 }
 
-.project1-tech-stack {
+.hidden-text1 {
     display: flex;
     position: relative;
-    margin: auto;
-    font-size: 16px;
-    border-radius: 5px;
-    left: 20px;
-    height: 200px;
-    white-space: wrap;
-
-
-    
-}
-
-.project1-description {
-    left: -50px;
-    flex-direction: column;
-    position: relative;
-    display: flex;
-    
-    flex-wrap: wrap;
-    color: white;
-}
-
-.project1-github {
-    display: flex;
-    position: relative;
-    align-items: center;
+    top: 0px;
+    font-size: 20px;
+    left: 40px;
     text-wrap: nowrap;
-    left: -120px;
-    top: 100px
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+    max-height: 20px;
+}
+
+
+
+
+
+.project1-description p {
+    text-align: center; /* Center the text horizontally */
+    color: white;
+    left: -142px;
+    top: 20px;
+    position: relative;
+    max-width: 200px;
+    width: 200px;
+}
+
+
+.github-link {
+    display: flex;
+    position: relative;
+    top: 60px;
+    left: -55px;
+    flex-direction: column;
 }
 
 
