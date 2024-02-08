@@ -373,6 +373,13 @@
     top: 20px;
 }
 
+.bond-image {
+    border-top-left-radius: 15px;
+}
+.trading-image {
+    border-top-right-radius: 15px;
+}
+
 .bond-image,
 .options-image,
 .market-dashboard-image,
@@ -385,7 +392,7 @@
 }
 
 .projects {
-    background-color: purple;
+    background-color: rgb(195, 181, 181);
     width: 1000px;
     height: 250px;
     display: flex;
@@ -393,10 +400,10 @@
     left: 10px;
     position: relative;
     margin: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
 }
-
-
 
 
 /********PROJECT 1 CORPORATE BOND PRICER**************************************************************************/
@@ -423,7 +430,7 @@
 .hidden-text1 {
     display: flex;
     position: relative;
-    top: 0px;
+    top: 5px;
     font-size: 20px;
     left: 40px;
     text-wrap: nowrap;
@@ -433,26 +440,25 @@
     max-height: 20px;
 }
 
-
-
-
-
 .project1-description p {
-    text-align: center; /* Center the text horizontally */
-    color: white;
-    left: -142px;
+    text-align: center; 
+    color: black;
+    left: -149px;
     top: 20px;
     position: relative;
     max-width: 200px;
     width: 200px;
 }
 
-
-.github-link {
+.github-link1 {
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    color: black;
     display: flex;
     position: relative;
-    top: 60px;
-    left: -55px;
+    top: 10px;
+    left: -65px;
     flex-direction: column;
 }
 
@@ -461,95 +467,114 @@
 /********PROJECT 2 OPTIONS SCREENER**************************************************************************/
 
 
-
-
-.project2-tech-stack {
+.hidden-text2 {
     display: flex;
     position: relative;
-    margin: auto;
-    font-size: 16px;
-    height: 20px;
-    width: 200px;
-    opacity: 0;
-    transition: opacity 0.3s ease;  
-    border-radius: 5px;
-    
-    height: 200px;
-    white-space: wrap;
-    
+    top: 5px;
+    font-size: 20px;
+    left: 55px;
+    text-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+    max-height: 20px;
 }
 
-.project2-description {
-    left: -430px;
+.project2-description p {
+    text-align: center; 
+    color: black;
+    left: -115px;
     top: 20px;
     position: relative;
-    display: flex;
-    justify-content: baseline;  
-    width: 200px;
     max-width: 200px;
-    color: white;
-    
+    width: 200px;
 }
 
-
+.github-link2 {
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: -30px;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    color: black;
+}
 /********PROJECT 3 STOCK MARKET DASHBOARD**************************************************************************/
 
 
-
-
-.project3-tech-stack {
+.hidden-text3 {
     display: flex;
     position: relative;
-    margin: auto;
-    font-size: 16px;
-    height: 20px;
-    width: 200px;
-    border-radius: 5px;
-
-    height: 200px;
-    white-space: wrap;
-    
+    top: 5px;
+    font-size: 20px;
+    left: 25px;
+    text-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+    max-height: 20px;
 }
 
-.project3-description {
+.project3-description p {
+    text-align: center; 
+    color: black;
+    left: -173px;
     top: 20px;
     position: relative;
-    display: flex;
-    justify-content: baseline;  
-    width: 200px;
     max-width: 200px;
-    color: white;
+    width: 200px;
 }
 
+.github-link3 {
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: -85px;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    color: black;
+}
 
 /********PROJECT 4 STOCK TRADING SIMULATOR**************************************************************************/
 
 
-
-
-.project4-tech-stack {
+.hidden-text4 {
     display: flex;
     position: relative;
-    margin: auto;
-    font-size: 16px;
-    height: 20px;
-    width: 200px;
-    border-radius: 5px;
-
-    height: 200px;
-    white-space: wrap;
-    
+    top: 5px;
+    font-size: 20px;
+    left: 25px;
+    text-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+    max-height: 20px;
 }
 
-.project4-description {
-    left: -810px;
+.project4-description p {
+    text-align: center; 
+    color: black;
+    left: -170px;
     top: 20px;
     position: relative;
-    display: flex;
-    justify-content: baseline;  
-    width: 200px;
     max-width: 200px;
-    color: white;
+    width: 200px;
+}
+
+.github-link4 {
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: -80px;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -608,7 +633,7 @@
 
 .style-button {
     height: 30px;
-    background-color: white;
+    background-color: rgb(195, 181, 181);
     border-radius: 5px;
     display: flex;
     position: relative;
@@ -631,7 +656,7 @@
     text-align: center;
     justify-content: center;
     width: 1100px;
-    height: 600px;
+    height: 1150px;
     background-color: #555758;   
     margin: auto;
     margin-top: 80px;  
@@ -639,7 +664,7 @@
 }
 
 .resume-header h1 {
-    top: -267px !important;
+    top: 5px !important;
     font-size: 25px;
     display: flex;
     position: relative;
@@ -648,18 +673,29 @@
 
 .inner-box6  {
     display: flex;
-    margin-top: 15px;
+    margin-top: 10px;
     align-items: center;
     justify-content: center;
     width: 1060px;
-    height: 500px;
+    height: 100%;
     background-color: grey;
     border-radius: 10px;
     position: relative;
     text-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
 }
 
-
+.resume {
+    top: -15px;
+    position: relative;
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    height: 95%;
+    width: 95%;
+}
+    
 
 /********CONTACT ME SECTION**************************************************************************/
 
