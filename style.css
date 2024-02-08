@@ -389,10 +389,11 @@
     width: 1000px;
     height: 250px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     left: 10px;
     position: relative;
     margin: 20px;
+
 }
 
 
@@ -412,8 +413,21 @@
     top: 0px;
     flex-direction: column;
     font-size: 20px;
+    text-wrap: nowrap;
+    flex-direction: row;
 }
 
+
+.project1-explain {
+    width: 250px;
+    height: 270px;
+    max-width: 270px;
+    max-height: 250px;
+    flex-direction: row;
+    display: flex;
+    position: relative;
+    
+}
 
 .project1-tech-stack {
     display: flex;
@@ -430,12 +444,12 @@
 }
 
 .project1-description {
-
-
+    left: -50px;
+    flex-direction: column;
     position: relative;
     display: flex;
-
-    width: 400px;
+    
+    flex-wrap: wrap;
     color: white;
 }
 
@@ -480,6 +494,7 @@
     width: 200px;
     max-width: 200px;
     color: white;
+    
 }
 
 
