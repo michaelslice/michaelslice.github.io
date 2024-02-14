@@ -121,10 +121,11 @@
 }
 
 .inner-education-box {
+    top: 40px;
     display: flex;
     position: absolute;
-    width: 1000px;
-    height: 190px;
+    width: 1080px;
+    height: 150px;
     background-color: grey;
     flex-direction: column;
     justify-content: center;
@@ -135,8 +136,8 @@
 .inner-education-box1 {
     display: flex;
     position: absolute;
-    width: 900px;
-    height: 160px;
+    width: 1060px;
+    height: 135px;
     background-color: rgb(195, 181, 181);
     flex-direction: column;
     justify-content: center;
@@ -155,7 +156,7 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    top: -70px;
+    top: -80px;
 }
 
 .education-name {
