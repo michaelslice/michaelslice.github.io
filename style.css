@@ -24,6 +24,7 @@
     display: flex;
     position: relative;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .header-name {
@@ -119,6 +120,31 @@
     border-radius: 10px;
 }
 
+.inner-education-box {
+    display: flex;
+    position: absolute;
+    width: 1000px;
+    height: 190px;
+    background-color: grey;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.inner-education-box1 {
+    display: flex;
+    position: absolute;
+    width: 900px;
+    height: 160px;
+    background-color: rgb(195, 181, 181);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+
 .education-header p {
     margin-bottom: 10px; 
 }
@@ -151,7 +177,7 @@
     top: -30px !important;  
     font-size: 14px !important;
     text-wrap: nowrap;
-    color: white;
+    color: black;
 }
 
 .club-header {
@@ -163,7 +189,7 @@
     top: 120px !important;  
     font-size: 14px !important;
     text-wrap: nowrap;
-    color: white;
+    color: black;
 }
 
 
@@ -177,11 +203,22 @@
     text-align: center;
     justify-content: center;
     width: 1100px;
-    height: 1000px;
+    height: 920px;
     background-color: #555758;   
     margin: auto;
     margin-top: 80px;  
     border-radius: 15px;  
+    position: relative;
+}
+
+.experience-header {
+    display: flex;
+    position: relative;
+    margin-bottom: 520px;
+    color: black;
+    font-size: 25px;
+    top: -430px !important;
+
 }
 
 .work-header h1 {
@@ -194,9 +231,40 @@
     top: -20px;
     display: flex;
     position: relative;
-    
 }
 
+.inner-work-experience-box {
+    width: 1080px;
+    margin: auto;
+    height: 840px;
+    background-color: grey;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    border-radius: 15px;
+    top: 60px;
+}
+
+
+
+.company-header1 {
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.company-header1 h1 {
+    display: flex;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    justify-self: center;
+    left: -120px;
+    align-items: center;
+}
 
 .inner-box {
     display: flex;
@@ -205,10 +273,23 @@
     justify-content: center;
     width: 1060px;
     height: 200px;
-    background-color: grey;
+    background-color: rgb(195, 181, 181);
     border-radius: 10px;
     position: relative;
     text-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.list-container {
+    max-width: 600px; 
+    padding: 0; 
+}
+
+.list-container1 {
+    position: relative;
+    display: flex;
+    top: -50px; 
 }
 
 .inner-box h1 {
@@ -217,8 +298,8 @@
     text-align: center;
     justify-content: center;
     font-size: 25px; 
-    top: -70px; 
-    left: 530px;
+    top: -40px; 
+    left: 90px;
     margin: auto;
     display: flex;
     position: relative;
@@ -245,7 +326,7 @@
     justify-content: center;
     width: 1060px;
     height: 200px;
-    background-color: grey;
+    background-color: rgb(195, 181, 181);
     border-radius: 10px;
     position: relative;
     text-wrap: nowrap;
@@ -276,7 +357,7 @@
     justify-content: center;
     width: 1060px;
     height: 200px;
-    background-color: grey;
+    background-color: rgb(195, 181, 181);
     border-radius: 10px;
     position: relative;
     text-wrap: nowrap;
@@ -304,8 +385,8 @@
     align-items: center;
     justify-content: center;
     width: 1060px;
-    height: 200px;
-    background-color: grey;
+    height: 140px;
+    background-color: rgb(195, 181, 181);
     border-radius: 10px;
     position: relative;
     text-wrap: nowrap;
