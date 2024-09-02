@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Sensenbrenner</title>
+    <title>Michael Sensenbrenner - Welcome to my Page</title>
     <link rel="stylesheet" type="text/css" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,38 +11,41 @@
 </head>
 <body>
     <div class="home">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuToggle = document.querySelector('.menu-toggle');
+                const navMenu = document.querySelector('.nav-menu');
+        
+                menuToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            });
+        </script>
+        
         <div class="header">
-            <a href="welcome.html">WELCOME TO MY PAGE</a>
-            <a href="../index.html">PROJECTS</a>
-            <a href="contact.html">CONTACT</a>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <nav class="nav-menu">
+                <a href="welcome.html">WELCOME TO MY PAGE</a>
+                <a href="../index.html">PROJECTS</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
         </div>
     
         <div class="top-header">
-            <h1><i>welcome to my page</i></h1>
+            <h1><i>Welcome to my page</i></h1>
         </div>
     
         <div class="text-body">
             <div class="text-body-inner">
-                <div>My name is Michael</div>
-                <div>I am a junior Computer Science major at Northern Illinois University.</div>
-                <div>feel free to check out my projects</div>
-                <div>Some of my interests include working out, reading, playing chess, practicing spanish, and running.</div>
-                <div>Long term I want to be a everyday learner and continue to grow my skill set and knowledge daily.</div>
-    
+                <div>Hi, I'm Michael.</div>
+                <div>I'm currently a junior majoring in Computer Science at Northern Illinois University.</div>
+                <div>Feel free to explore my projects!</div>
+                <div>In my free time, I enjoy working out, reading, playing chess, practicing Spanish, and running.</div>
+                <div>My long-term goal is to be a lifelong learner, continuously expanding my skills and knowledge every day.</div>
+
                 <div class="contact-navigate">
                     <a href="contact.html">
                         <span>Contact</span>
-                    </a>
-                </div>
-
-                <div class="top-navigate">
-                    <a href='#'>
-                        <div class="navigate-inner">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="arrow-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
-                            </svg>
-                            <span>Back to Top</span>
-                        </div>
                     </a>
                 </div>
             </div>

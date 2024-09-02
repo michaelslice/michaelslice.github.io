@@ -14,25 +14,36 @@ body {
 
 .header {
     display: flex;
-    width: 100%;
-    background-color: white;
-    height: 5rem;
-    flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
-    gap: 2rem;
+    background-color: white;
+    padding: 1rem;
+    position: relative;
 }
 
 .header a {
     color: gray;
-    cursor: pointer;
-    font-family: "Roboto", sans-serif;
     text-decoration: none;
+    margin-right: 2rem;
+    font-size: 1rem;
 }
 
 .header a:hover {
     color: black;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
     cursor: pointer;
+    margin-right: auto;
+    color: gray;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1rem;
 }
 
 .projects {
@@ -44,6 +55,7 @@ body {
 .projects-row {
     display: flex;
     flex-direction: row;
+    margin-top: -4px;
 }
 
 .projects-row img {
@@ -77,11 +89,20 @@ body {
     text-decoration: none;
 }
 
-.message-field {
+.message-field textarea {
     height: 8rem;
     display: flex;
     font-family: "Roboto", sans-serif;
     text-decoration: none;
+}
+
+textarea {
+    height: 8rem;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    width: 98%;
+    overflow: hidden;
 }
 
 #submit-button {
@@ -123,6 +144,7 @@ body {
     height: 1rem;
 }
 
+.envelope,
 .linkedin,
 .github {
     height: 1rem;
@@ -165,30 +187,354 @@ body {
     gap: 2rem;
 }
 
-.contact-navigate,
-.contact-navigate span {
-    display: flex;
-    max-width: 5rem;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    cursor: pointer;
-    background-color: rgb(80, 79, 79);
-    border-radius: 5px;
-    border: none;
+.fwrap { 
+    position: relative; 
+    max-width: 45rem;
+}
+
+.fcap {
+  position: absolute; 
+  top: 0; 
+  width: 100%; 
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex; 
+  justify-content: top; 
+  align-items: top;
+  flex-direction: column;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.fcap a {
     color: white;
-    height: 2rem;
-    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
     text-decoration: none;
-    margin: auto;
-    padding-left: .5rem;
-    padding-right: .5rem;
+}
+
+.fcap h1,
+.fcap div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+ 
+.fcap {
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+  max-width: 45rem;
+  max-height: 45rem;
+  display: flex;
+}
+
+.fwrap:hover .fcap {
+  visibility: visible; opacity: 1;
+  max-width: 45rem;
+}
+
+.bottom-space {
+    height: 200px;
+}
+
+.my-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.my-form div {
+    margin-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.my-form input[type="text"],
+.my-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.my-form input[type="text"]:focus,
+.my-form input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #0056b3;
+}
+
+#submit-button:active {
+    background-color: #003f7f;
+}
+
+.my-form input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.media {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.media svg {
+    width: 24px;
+    height: 24px;
+    fill: #555;
+    transition: fill 0.3s;
+}
+
+.media:hover {
+    background-color: #007bff;
+    transform: scale(1.1);
+}
+
+.media:hover svg {
+    fill: #fff;
+}
+
+.contact-navigate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
 }
 
 .contact-navigate a {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 25px;
     text-decoration: none;
-    color: white;
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.contact-navigate a:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .header a {
+        font-size: 0.8rem;
+    }
+
+    .projects-row {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .projects-row img {
+        max-width: 100%;
+    }
+
+    .bottom-space {
+        height: 100px;
+    }
+
+    .fwrap {
+        max-width: 100%;
+    }
+
+    .fcap {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .my-form {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .text-field,
+    .email-field {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .message-field textarea {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        z-index: 1000; 
+    }
+
+    .nav-menu a {
+        margin: 0;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .nav-menu a:last-child {
+        border-bottom: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .projects-row {
+        flex-direction: column;
+    }
+
+    .projects-row img {
+        max-width: 100%;
+    }
+
+    .fwrap {
+        max-width: 100%;
+    }
+
+    .fcap {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .my-form {
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .text-field,
+    .email-field {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .message-field textarea {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .projects-row {
+        flex-direction: column;
+    }
+
+    .fwrap {
+        max-width: 100%;
+    }
+
+    .fcap {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .my-form {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .text-field,
+    .email-field {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .message-field textarea {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .projects-row {
+        flex-direction: row;
+    }
+
+    .fwrap {
+        max-width: 100%;
+    }
+
+    .fcap {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.fwrap:hover .fcap {
+    visibility: visible;
+    opacity: 1;
 }

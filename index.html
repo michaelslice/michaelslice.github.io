@@ -11,31 +11,127 @@
 </head>
 <body>
     <div class="home">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuToggle = document.querySelector('.menu-toggle');
+                const navMenu = document.querySelector('.nav-menu');
+        
+                menuToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            });
+        </script>
+        
         <div class="header">
-            <a href="Pages/welcome.html">WELCOME TO MY PAGE</a>
-            <a href="index.html">PROJECTS</a>
-            <a href="Pages/contact.html">CONTACT</a>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <nav class="nav-menu">
+                <a href="Pages/welcome.html">WELCOME TO MY PAGE</a>
+                <a href="../index.html">PROJECTS</a>
+                <a href="Pages/contact.html">CONTACT</a>
+            </nav>
         </div>
+
         <div class="projects">
             <div class="projects-row">
-                <img id="turing" src="Images/turing.png">
-                <img src="Images/system.png">
+                <div class="fwrap">
+                    <img id="turing" src="Images/turing.png">
+                    <div class="fcap">
+                        <h1><i>Turing Terminal</i></h1>
+                        <div><i>Turing-Terminal is a web-based financial terminal developed using React, TypeScript, Django, Python, PostgreSQL, Firebase, Docker, and SocketIO.</i></div>
+                        <div><a href="https://github.com/michaelslice/turing-terminal-front-end"><i>View Project Frontend Code</i></a></div>
+                        <div><a href="https://github.com/michaelslice/turing-terminal-back-end"><i>View Project Backend Code</i></a></div>
+                        <div><i>2024</i></div>
+                    </div>
+                </div>
+                <div class="fwrap">
+                    <img id="system "src="Images/system.png">
+                    <div class="fcap">
+                        <h1><i>Multi-Threaded Trading Engine</i></h1>
+                        <div><i>A Limit Orderbook & Matching Engine designed for trading equities using a FIFO matching algorithm.</i></div>
+                        <div><a href="https://github.com/michaelslice/Multi-Threaded-Trading-Engine"><i>View Project</i></a></div>
+                        <div><i>2024</i></div>
+                    </div>
+                </div>
             </div>
             <div class="projects-row">
-                <img src="Images/pricer.png">
-                <img src="Images/coin.png">
+                <div class="fwrap">
+                    <img src="Images/pricer.png">
+                    <div class="fcap">
+                        <h1><i>Options Pricer</i></h1>
+                        <div><i>A command line tool used to price European Options.</i></div>
+                        <div><a href="https://github.com/michaelslice/Options-Pricer"><i>View Project</i></a></div>
+                        <div><i>2024</i></div>
+                    </div>
+                </div>
+                <div class="fwrap">
+                    <img src="Images/coin.png">
+                    <div class="fcap">
+                        <h1><i>Bitcoin Key Generator</i></h1>
+                        <div><i>Cryptographic key generation using C++.</i></div>
+                        <div><a href="https://github.com/michaelslice/Bitcoin-Key-Generator"><i>View Project</i></a></div>
+                        <div><i>2024</i></div>
+                    </div>
+                </div>
             </div>
             <div class="projects-row">
-                <img src="Images/tcp.png">
-                <img src="Images/gpt.png">
+                <div class="fwrap">
+                    <img src="Images/tcp.png">
+                    <div class="fcap">
+                        <h1><i>TCP Messanger</i></h1>
+                        <div><i>Basic example using TCP, and Web-Sockets in C.</i></div>
+                        <div><a href="https://github.com/michaelslice/Simple-TCP"><i>View Project</i></a></div>
+                        <div><i>2024</i></div>
+                    </div>
+                </div>
+                <div class="fwrap">
+                    <img src="Images/gpt.png">
+                    <div class="fcap">
+                        <h1><i>ChatGPT Discord Bot</i></h1>
+                        <div><i>Very easy program to add ChatGPT, to your Discord server.</i></div>
+                        <div><a href="https://github.com/michaelslice/ChatGPT-Discord-Bot"><i>View Project</i></a></div>
+                        <div><i>2024</i></div>
+                    </div>
+                </div>
             </div>
             <div class="projects-row">
-                <img src="Images/marketdashboard.png">
-                <img src="Images/pricer.png">
+                <div class="fwrap">
+                    <img src="Images/marketdashboard.png">
+                    <div class="fcap">
+                        <h1><i>Stock Market Dashboard</i></h1>
+                        <div><i>A financial application that displays up-to-date stock and options data, allowing users to stay updated on market trends.</i></div>
+                        <div><a href="https://github.com/michaelslice/Stock-Market-Dashboard"><i>View Project</i></a></div>
+                        <div><i>2023</i></div>
+                    </div>
+                </div>
+                <div class="fwrap">
+                    <img src="Images/pricer.png">
+                    <div class="fcap">
+                        <h1><i>Bond Pricer</i></h1>
+                        <div><i>A Monte Carlo-based bond pricer that leverages simulation techniques to provide accurate and comprehensive bond pricing by accounting for stochastic factors.</i></div>
+                        <div><a href="https://github.com/michaelslice/Bond-Pricer"><i>View Project</i></a></div>
+                        <div><i>2023</i></div>
+                    </div>
+                </div>
             </div>
             <div class="projects-row">
-                <img src="Images/screener.png">
-                <img src="Images/trader.png">
+                <div class="fwrap">
+                    <img src="Images/screener.png">
+                    <div class="fcap">
+                        <h1><i>Options Screener</i></h1>
+                        <div><i>A program that leverages the Robinhood API to fetch options contract data, allowing users to calculate metrics such as percent win and probability of losing.</i></div>
+                        <div><a href="https://github.com/michaelslice/Options-Screener"><i>View Project</i></a></div>
+                        <div><i>2023</i></div>
+                    </div>
+                </div>
+                <div class="fwrap">
+                    <img src="Images/trader.png">
+                    <div class="fcap">
+                        <h1><i>Stock Trading Simulator</i></h1>
+                        <div><i>A program for simulating real-world market conditions, allowing users to practice and improve their trading skills without the financial risk.</i></div>
+                        <div><a href="https://github.com/michaelslice/Stock-Trading-Simulator"><i>View Project</i></a></div>
+                        <div><i>2023</i></div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -46,6 +142,7 @@
                         <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
                     </svg>
                     <span>Back to Top</span>
+                    <div class="bottom-space"></div>
                 </div>
             </a>
         </div>
